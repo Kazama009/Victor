@@ -1,5 +1,7 @@
 # Victor
 
+A powerful userbot for telegram
+
 A developing repo, still not stable
 
 
