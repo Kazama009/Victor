@@ -2,6 +2,7 @@ import os
 import time
 import logging
 
+from dotenv import load_dotenv
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
 
@@ -14,6 +15,8 @@ logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
 )
+
+load_dotenv()
 
 LOGGER = logging.getLogger(__name__)
 START_TIME = time.time()
