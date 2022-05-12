@@ -1,6 +1,6 @@
 class Config(object):
     LOGGER = True
-    APP_ID = 12345 # Get from telegram.org
+    API_ID = 12345 # Get from telegram.org
     API_HASH = "" # Get from telegram.org
 
 

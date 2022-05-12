@@ -25,12 +25,12 @@ ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
 
-    APP_ID = os.environ.get("APP_ID", None)
+    API_ID = os.environ.get("APP_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
 
 else:
 
-    APP_ID = Config.APP_ID
+    API_ID = Config.API_ID
     API_HASH = Config.API_HASH
 
 aiohttpsession = ClientSession()
@@ -38,7 +38,7 @@ arq = ARQ("https://arq.hamker.in", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpses
 
 victor = Client(
     "Victor",
-    api_id=APP_ID,
+    api_id=API_ID,
     api_hash=API_HASH,
 )
 
